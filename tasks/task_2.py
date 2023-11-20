@@ -13,5 +13,3 @@ for number in numbers:
             continue
         elif int_number % 5 == 0:
             print(int_number)
-# решение подобрала через отладчик.. есть ли приоритетность
-# в проверках с break, continue???
