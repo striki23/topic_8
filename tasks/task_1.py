@@ -10,3 +10,14 @@ for x in data_types:
     if type(x) in (float, str):
         continue
     print('Элемент:', x, 'Тип:', type(x))
+
+# Option 2
+for x in data_types:
+    typeof = type(x)
+    if typeof not in (float, str):
+        print('Элемент:', x, 'Тип:', typeof)
+
+# Option 3
+for x in data_types:
+    if not isinstance(x, (float, str)):
+        print('Элемент:', x, 'Тип:', type(x))

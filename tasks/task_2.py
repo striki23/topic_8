@@ -5,11 +5,10 @@ numbers = ["21", "85", "150", "190", "135", "515", "80"]
 # если в списке встречается число более 500, прервать цикл
 
 for number in numbers:
-    int_number = int(number)
-    if int_number > 500:
+    number = int(number)
+    if number > 500:
         break
-    else:
-        if int_number > 150:
-            continue
-        elif int_number % 5 == 0:
-            print(int_number)
+    if number > 150:
+        continue
+    elif number % 5 == 0:
+        print(number)
